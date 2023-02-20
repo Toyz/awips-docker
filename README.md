@@ -1,5 +1,7 @@
 # AWIPS2 Cave Docker Image
 
+### **All commands here assume you have docker installed and running. And are using Powershell Core**
+
 **NOTE:** This readme for running the image was setup for WSL2 on Windows 11. It may not work on other systems.
 
 This repository contains the Dockerfile and supporting files to build the AWIPS2 Cave Docker image and the ability to run it.
