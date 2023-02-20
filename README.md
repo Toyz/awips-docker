@@ -8,7 +8,7 @@ This repository contains the Dockerfile and supporting files to build the AWIPS2
 
 To build the image, run the following command:
 
-    docker build -t awips2-cave:latste .
+    docker build -t awips2-cave:latest .
 
 ## Running the Image
 
