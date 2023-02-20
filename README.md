@@ -17,7 +17,7 @@ To build the image, run the following command:
 To run the image you just created use the following command:
 
 ```
-docker run --hostname ${env:computername} --gpus all --rm -ti -e DISPLAY=:0 -e WAYLAND_DISPLAY=wayland-0 -e XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir -e PULSE_SERVER=/mnt/wslg/PulseServer -v /run/desktop/mnt/host/wslg/.X11-unix:/tmp/.X11-unix -v /run/desktop/mnt/host/wslg:/mnt/wslg -v ${HOME}/caveData:/home/awips/caveData awips2-cave:latest
+docker run --hostname ${env:computername} --gpus all --rm -ti -e DISPLAY=:0 -e WAYLAND_DISPLAY=wayland-0 -e XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir -e PULSE_SERVER=/mnt/wslg/PulseServer -v /run/desktop/mnt/host/wslg/.X11-unix:/tmp/.X11-unix -v /run/desktop/mnt/host/wslg:/mnt/wslg -v ${HOME}/awips:/home/${env:username}/caveData awips2-cave:latest
 ```
 
 **NOTE:** If you change the `USER` you must change the mount point for the `caveData` directory. See the `caveData` section below.
